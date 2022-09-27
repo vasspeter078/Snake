@@ -1,2 +1,2 @@
 # Snake
-Snake játék C++ nyelvenaz objektum-orientált programozási elveket követve.
+Snake játék C++ nyelven, objektum-orientált programozási elveket követve.
