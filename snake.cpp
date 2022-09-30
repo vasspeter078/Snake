@@ -16,34 +16,31 @@ Snake::Snake() {
     dir = right;
 }
 void Snake::moveSnake(int fSize) {
-    ListElement<Point> *iter = l.getFirst();
-    while (iter->getNext() != NULL) {
-        iter = iter->getNext();
-    }
-    Point p = iter->getData();
+    List<Point>::iterator i = l.last();
+    Point p = (*i).getData();
     if (dir == up) {
-        if (iter->getData().getY() == 1) {
+        if (p.getY() == 1) {
             p.setY(fSize);
         } else {
             p.setY(p.getY() - 1);
         }
     } else {
         if (dir == right) {
-            if (iter->getData().getX() == fSize) {
+            if (p.getX() == fSize) {
                 p.setX(1);
             } else {
                 p.setX(p.getX() + 1);
             }
         } else {
             if (dir == down) {
-                if (iter->getData().getY() == fSize) {
+                if (p.getY() == fSize) {
                     p.setY(1);
                 } else {
                     p.setY(p.getY() + 1);
                 }
             } else {
                 if (dir == left) {
-                    if (iter->getData().getX() == 1) {
+                    if (p.getX() == 1) {
                         p.setX(fSize);
                     } else {
                         p.setX(p.getX() - 1);

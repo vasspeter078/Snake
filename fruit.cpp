@@ -1,9 +1,9 @@
 #include "fruit.hpp"
 
 void Fruit::newPositionGenerate(int fieldSize) {
-        p.setX(rand() % fieldSize + 1);
-        p.setY(rand() % fieldSize + 1);
+        x = rand() % fieldSize + 1;
+        y = rand() % fieldSize + 1;
     }
     Point Fruit::getP() const {
-        return p;
+        return Point(x, y);
     }

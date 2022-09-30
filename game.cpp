@@ -51,7 +51,7 @@ void Game::start() {
             }
         }
         draw();
-        _sleep(50);
+        Sleep(50);
         system("cls");
     }
 }
@@ -74,5 +74,5 @@ void Game::draw() {
 }
 void Game::gameOver() {
     std::cout<<"GAME OVER"<<std::endl;
-    std::cout<<"Your score is: "<<score<<std::endl;
+    std::cout<<"Your score is "<<score<<std::endl;
 }

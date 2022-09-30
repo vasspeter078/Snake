@@ -5,8 +5,7 @@
 
 #include "point.hpp"
 
-class Fruit {
-    Point p;
+class Fruit : public Point {
 public:
     void newPositionGenerate(int fieldSize);
     Point getP() const;

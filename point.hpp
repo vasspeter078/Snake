@@ -2,6 +2,7 @@
 #define POINT_HPP_INCLUDED
 
 class Point {
+protected:
     int x;
     int y;
 public:
